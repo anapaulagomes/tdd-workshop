@@ -12,5 +12,6 @@ You can add this feature creating a request
 to an URL if it is valid.
 """
 
+
 def is_valid(url):
-    return url.startswith('http://') or url.startswith('https://')
+    return url.startswith("http://") or url.startswith("https://")

@@ -25,19 +25,19 @@ from datetime import timedelta
 
 def scheduled_for_message(when: datetime) -> str:
     today = datetime.now().date()
-    at = when.strftime('%H:%M')
+    at = when.strftime("%H:%M")
     if when.date() == today:
-        label = 'today'
+        label = "today"
         return "{} {}".format(label, at)
 
     tomorrow = today + timedelta(days=1)
     if when.date() == tomorrow:
-        label = 'tomorrow'
+        label = "tomorrow"
         return "{} {}".format(label, at)
 
     current_week = today.isocalendar()[1]
     if when.isocalendar()[1] == current_week:
-        label = when.strftime('%A')
+        label = when.strftime("%A")
         return "{} {}".format(label, at)
 
-    return when.strftime('%d.%m.%Y %H:%M')
+    return when.strftime("%d.%m.%Y %H:%M")
