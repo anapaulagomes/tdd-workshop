@@ -28,4 +28,4 @@ def calculate(persons):
 
     pizza_label = "pizzas" if pizzas > 1 else "pizza"
     juice_label = "juices" if juices > 1 else "juice"
-    return f"{pizzas} {pizza_label} and {juices} orange {juice_label}."
+    return "{} {} and {} orange {}.".format(pizzas, pizza_label, juices, juice_label)
