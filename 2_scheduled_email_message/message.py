@@ -1,9 +1,9 @@
 """
 Problem:
 
-You are writing a feature that schedule emails.
+You are writing a feature that schedules emails.
 As part of this feature, you should write a method
-that receive a date (when the email should be sent)
+that receives a date (when the email should be sent)
 and returns a friendly message for your user.
 
 If the email was scheduled for today, you should return
